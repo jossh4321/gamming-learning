@@ -8,6 +8,7 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
   </head>
   <body>
@@ -17,7 +18,10 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.js"></script>
     <script>
+      $(document).ready(function(){
         $(".sidebar-dropdown > a").click(function() {
           $(".sidebar-submenu").slideUp(200);
           if (
@@ -45,6 +49,8 @@
         $("#show-sidebar").click(function() {
           $(".page-wrapper").addClass("toggled");
         });
+      })
+        
     </script>
   </body>
 </html>
